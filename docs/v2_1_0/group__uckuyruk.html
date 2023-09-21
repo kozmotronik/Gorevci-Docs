@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Görevci by Kozmotronik: Unsigned Char Kuyruk Yönetimi</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gorevci_logo_96.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Görevci by Kozmotronik<span id="projectnumber">&#160;v2.1.0</span>
+   </div>
+   <div id="projectbrief">Küçük gömülü sistemler için çoklu görev (multi-tasking) yönetimi uygulaması</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Oluşturan Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Ara');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('group__uckuyruk.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Yüklüyor...</div>
+<div class="SRStatus" id="Searching">Arıyor...</div>
+<div class="SRStatus" id="NoMatches">Eşleşme Yok</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#files">Dosyalar</a> &#124;
+<a href="#nested-classes">Veri Yapıları</a> &#124;
+<a href="#define-members">Makrolar</a> &#124;
+<a href="#typedef-members">Typedef'ler</a> &#124;
+<a href="#func-members">Fonksiyonlar</a>  </div>
+  <div class="headertitle"><div class="title">Unsigned Char Kuyruk Yönetimi<div class="ingroups"><a class="el" href="group__veri.html">Veri Yönetimi</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Unsigned Char Kuyruk Yönetimi için işbirliği (collaboration) şeması:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk.png" border="0" usemap="#agroup____uckuyruk" alt=""/></div>
+<map name="agroup____uckuyruk" id="agroup____uckuyruk">
+<area shape="rect" title=" " alt="" coords="152,5,307,45"/>
+<area shape="rect" href="group__veri.html" title=" " alt="" coords="5,13,104,38"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
+Dosyalar</h2></td></tr>
+<tr class="memitem:uckuyruk_8c"><td class="memItemLeft" align="right" valign="top">dosya &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uckuyruk_8c.html">uckuyruk.c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Veri Yapıları</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_u_c_kuyruk.html">UCKuyruk</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Makrolar</h2></td></tr>
+<tr class="memitem:ga070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>&#160;&#160;&#160;( (void*) 0 )</td></tr>
+<tr class="separator:ga070d2ce7b6bb7e5c05602aa8c308d0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedef'ler</h2></td></tr>
+<tr class="memitem:gae42454e68b23ac7aa059e395216a0db0"><td class="memItemLeft" align="right" valign="top"><a id="gae42454e68b23ac7aa059e395216a0db0" name="gae42454e68b23ac7aa059e395216a0db0"></a>
+typedef struct <a class="el" href="struct_u_c_kuyruk.html">UCKuyruk</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uckuyruk_t</b></td></tr>
+<tr class="memdesc:gae42454e68b23ac7aa059e395216a0db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kolaylık sağlaması için <a class="el" href="struct_u_c_kuyruk.html">UCKuyruk</a> tür tanımı. <br /></td></tr>
+<tr class="separator:gae42454e68b23ac7aa059e395216a0db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49245ed4656559bd5613a477f498ac12"><td class="memItemLeft" align="right" valign="top"><a id="ga49245ed4656559bd5613a477f498ac12" name="ga49245ed4656559bd5613a477f498ac12"></a>
+typedef <a class="el" href="group__uckuyruk.html#gae42454e68b23ac7aa059e395216a0db0">uckuyruk_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>puck_t</b></td></tr>
+<tr class="memdesc:ga49245ed4656559bd5613a477f498ac12"><td class="mdescLeft">&#160;</td><td class="mdescRight">uckuyruk_t yapısı için başvuru türü (okunaklılığı iyileştirmek için) <br /></td></tr>
+<tr class="separator:ga49245ed4656559bd5613a477f498ac12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonksiyonlar</h2></td></tr>
+<tr class="memitem:ga1076fc2da0ba408372720fd7dfce197a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga1076fc2da0ba408372720fd7dfce197a">uckuyrukIlkle</a> (const unsigned char kapasite, <a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk, unsigned char *tampon)</td></tr>
+<tr class="separator:ga1076fc2da0ba408372720fd7dfce197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0faf8f0e435b987fa89e45648350f979"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga0faf8f0e435b987fa89e45648350f979">uckuyrukKuyrukla</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk, const unsigned char deger)</td></tr>
+<tr class="separator:ga0faf8f0e435b987fa89e45648350f979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga769b27f939cb739427a98d4a89726c12"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga769b27f939cb739427a98d4a89726c12">uckuyrukCokluKuyrukla</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk, const unsigned char *kaynak, const unsigned char nicelik)</td></tr>
+<tr class="separator:ga769b27f939cb739427a98d4a89726c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab638819561958ebec2ce2acc3d6124ed"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gab638819561958ebec2ce2acc3d6124ed">uckuyrukBastakiOge</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk)</td></tr>
+<tr class="separator:gab638819561958ebec2ce2acc3d6124ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c1ddd00da8c1e0bb21e587695908a88"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk)</td></tr>
+<tr class="separator:ga6c1ddd00da8c1e0bb21e587695908a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac17c2c22af4087626688a779773dc363"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gac17c2c22af4087626688a779773dc363">uckuyrukCokluAl</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk, unsigned char *hedef, const unsigned char nicelik)</td></tr>
+<tr class="separator:gac17c2c22af4087626688a779773dc363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafae769a4f6668c1d543622d4f232b1a8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gafae769a4f6668c1d543622d4f232b1a8">uckuyrukKuyrugaAktar</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kaynak, <a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> hedef)</td></tr>
+<tr class="separator:gafae769a4f6668c1d543622d4f232b1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaba744f28b318a4aaec2168779466a05"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gaaba744f28b318a4aaec2168779466a05">uckuyrukKuyrugaCokluAktar</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kaynak, <a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> hedef, const unsigned char nicelik)</td></tr>
+<tr class="separator:gaaba744f28b318a4aaec2168779466a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d4440db89a9eca92ffc138aeb15110c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga1d4440db89a9eca92ffc138aeb15110c">uckuyrukKuyrugaKopyala</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kaynak, <a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> hedef)</td></tr>
+<tr class="separator:ga1d4440db89a9eca92ffc138aeb15110c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c2286d7d088cd33464d507e4d205a48"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga6c2286d7d088cd33464d507e4d205a48">uckuyrukKuyrugaCokluKopyala</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kaynak, <a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> hedef, const unsigned char nicelik)</td></tr>
+<tr class="separator:ga6c2286d7d088cd33464d507e4d205a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf5fee0f357e67e3c06254d1dee082bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gacf5fee0f357e67e3c06254d1dee082bc">uckuyrukBosalt</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk)</td></tr>
+<tr class="separator:gacf5fee0f357e67e3c06254d1dee082bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3eca5b5439f8cd9477159384e032f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gab3eca5b5439f8cd9477159384e032f83">uckuyrukNBosalt</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk, unsigned char n)</td></tr>
+<tr class="separator:gab3eca5b5439f8cd9477159384e032f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga821075f1e913988ac99be6f27abff0da"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga821075f1e913988ac99be6f27abff0da">uckuyrukDoldur</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk, const unsigned char deger, const unsigned char nicelik)</td></tr>
+<tr class="separator:ga821075f1e913988ac99be6f27abff0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7436780d612c55093bbd01bfd1329cb3"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga7436780d612c55093bbd01bfd1329cb3">uckuyrukOgeSayimi</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk)</td></tr>
+<tr class="separator:ga7436780d612c55093bbd01bfd1329cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1166641a67687372c3aa771eb1e0df77"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#ga1166641a67687372c3aa771eb1e0df77">uckuyrukDolu</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk)</td></tr>
+<tr class="separator:ga1166641a67687372c3aa771eb1e0df77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6e7e6be7bcd59765ef7f4dcd351b14f"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f">uckuyrukKalanKapasite</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk)</td></tr>
+<tr class="separator:gac6e7e6be7bcd59765ef7f4dcd351b14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1b0264ead3d549f8320d9ba13ca8969"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos</a> (<a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a> kuyruk)</td></tr>
+<tr class="separator:gaa1b0264ead3d549f8320d9ba13ca8969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ayrıntılı tanımlama</h2>
+<p>Görevci için ardışıl (serial) FIFO modelinde bir kuyruk kütüphanesi.</p>
+<p>uckuyruk unsigned char kuyruk kısaltması olarak kullanılmıştır. Bu modülün amacı statik olarak tanımlanacak unsigned char türünde bir dizinin referansını tutup o dizi üzerinde FIFO (İlk giren ilk çıkar) türünde bir kuyruk yönetimi yapmaktır. Modül, uckuyruk_t türünde bir yapıya sınırlı kapasiteye (en fazla 255) sahip statik bir unsigned char dizisi bağlamak koşuluyla, tek bir uygulama içerisinde birden çok FIFO kuyruğu yönetimi yapabilecek şekilde yazılmıştır. Özellikle seri portlar veya LCD ekranlar gibi görece yavaş çalışan donanımlara birden çok ardı ardına veri yazılması gereken durumlarda bu kuyruğu kullanmak çok avantajlıdır. Bu FIFO kuyruğu kullanıldığı takdirde, bu tür yavaş aygıtların veriyi byte-byte göndermesini beklemek yerine kuyruğa yazıp sonra ilgili donanım göndermeye her müsait olduğunda, kuyruktan alınıp ilgili donanıma verilebilir. Böylece CPU zamanı yavaş donanımların işini bitirmesini beklemek için boşuna harcanmaz.</p>
+<p>Kullanımı oldukça basittir: </p><div class="fragment"><div class="line"><span class="comment">// Önce statik bir dizi tanımlanır:</span></div>
+<div class="line"><span class="preprocessor">#define DIZI_KAPASITE 48</span></div>
+<div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> dizi[DIZI_KAPASITE];</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Dizi tanımlandıktan sonra bir uckuyruk_t tanımlanır:</span></div>
+<div class="line"><a class="code hl_struct" href="struct_u_c_kuyruk.html">uckuyruk_t</a> kuyruk;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Tanımlanan kuyruk ilgili parametrelerle ilklenir:</span></div>
+<div class="line"><a class="code hl_function" href="group__uckuyruk.html#ga1076fc2da0ba408372720fd7dfce197a">uckuyrukIlkle</a>(DIZI_KAPASITE, &amp;kuyruk, dizi);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Kuyruk bir kez ilklendi mi artık kullanıma hazırdır:</span></div>
+<div class="line"><span class="comment">// Kuyruklamak için:</span></div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="group__uckuyruk.html#ga0faf8f0e435b987fa89e45648350f979">uckuyrukKuyrukla</a>(&amp;kuyruk, 25) == 0) {</div>
+<div class="line">     <span class="comment">// Kuyruklama başarısız; kuyruk dolu.</span></div>
+<div class="line">     <span class="comment">// Burada farklı yeniden deneme stratejileri uygulanabilir.</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span> {</div>
+<div class="line">     <span class="comment">// Kuyruklama başarılı.</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Kuyruktan almak için:</span></div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos</a>(&amp;kuyruk)) {</div>
+<div class="line">     <span class="comment">// Kuyruk boş, alınacak bir şey yok.</span></div>
+<div class="line">     <span class="comment">// Burada farklı bekleme stratejileri uygulanabilir.</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span> {</div>
+<div class="line">     <span class="comment">// Kuyruktan veri var, alınabilir.</span></div>
+<div class="line">     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> veri = <a class="code hl_function" href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl</a>(&amp;kuyruk);</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__uckuyruk_html_ga0faf8f0e435b987fa89e45648350f979"><div class="ttname"><a href="group__uckuyruk.html#ga0faf8f0e435b987fa89e45648350f979">uckuyrukKuyrukla</a></div><div class="ttdeci">char uckuyrukKuyrukla(puck_t kuyruk, const unsigned char deger)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:45</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga1076fc2da0ba408372720fd7dfce197a"><div class="ttname"><a href="group__uckuyruk.html#ga1076fc2da0ba408372720fd7dfce197a">uckuyrukIlkle</a></div><div class="ttdeci">void uckuyrukIlkle(const unsigned char kapasite, puck_t kuyruk, unsigned char *tampon)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:36</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga6c1ddd00da8c1e0bb21e587695908a88"><div class="ttname"><a href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl</a></div><div class="ttdeci">unsigned char uckuyrukKuyruktanAl(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:84</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gaa1b0264ead3d549f8320d9ba13ca8969"><div class="ttname"><a href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos</a></div><div class="ttdeci">char uckuyrukBos(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:274</div></div>
+<div class="ttc" id="astruct_u_c_kuyruk_html"><div class="ttname"><a href="struct_u_c_kuyruk.html">UCKuyruk</a></div><div class="ttdef"><b>Definition:</b> uckuyruk.h:143</div></div>
+</div><!-- fragment --><p>Eğer kuyrukta char türünde veriler saklanmak istenirse tek yapılması gereken; veriyi kuyruktan alırken char türüne dönüştürmektir (type casting). Önceki örneği char türü için güncellemek istersek yalnızca kuyruktan alma işleminde değişiklik yapmamız gerekir: </p><div class="fragment"><div class="line"><span class="comment">// Kuyruklamak için:</span></div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="group__uckuyruk.html#ga0faf8f0e435b987fa89e45648350f979">uckuyrukKuyrukla</a>(&amp;kuyruk, <span class="charliteral">&#39;A&#39;</span>) == 0) {</div>
+<div class="line">     <span class="comment">// Kuyruklama başarısız; kuyruk dolu.</span></div>
+<div class="line">     <span class="comment">// Burada farklı yeniden deneme stratejileri uygulanabilir.</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span> {</div>
+<div class="line">     <span class="comment">// Kuyruklama başarılı.</span></div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Kuyruktan almak için:</span></div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos</a>(&amp;kuyruk)) {</div>
+<div class="line">     <span class="comment">// Kuyruk boş, alınacak bir şey yok.</span></div>
+<div class="line">     <span class="comment">// Burada farklı bekleme stratejileri uygulanabilir.</span></div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">else</span> {</div>
+<div class="line">     <span class="comment">// Char türünde veriyi almak için tek yapılması gereken casting</span></div>
+<div class="line">     <span class="comment">// işlemidir.</span></div>
+<div class="line">     <span class="keywordtype">char</span> veri = (char) <a class="code hl_function" href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl</a>(&amp;kuyruk);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Basit tekli kuyruklama ve kuyruktan almaya ek olarak çoklu kuyruklama ve çoklu kuyruktan alma API'leri de vardır. Bunlar:</p>
+<ul>
+<li><a class="el" href="group__uckuyruk.html#ga769b27f939cb739427a98d4a89726c12">uckuyrukCokluKuyrukla()</a></li>
+<li><a class="el" href="group__uckuyruk.html#gac17c2c22af4087626688a779773dc363">uckuyrukCokluAl()</a> işlevleridir.</li>
+</ul>
+<p>Bu kadarla da sınırlı değil! Çeşitli ardışıllaştırma (serializing) teknikleri kullanarak byte ırmağına dönüştürülmüş daha büyük türde ve yapıda veriler de kuyruklanabilir. Aynı kuyruktan veri eski haline döndürmek için; kuyruklamadan önce uygulanan ardışıllaştırma tekniğinin tersi bir teknik ile istenen tür ve yapıdaki veri byte ırmağı halinde kuyruktan alınıp özgün yapısına dönüştürülebilir. </p>
+<h2 class="groupheader">Makro Dokümantasyonu</h2>
+<a id="ga070d2ce7b6bb7e5c05602aa8c308d0c4" name="ga070d2ce7b6bb7e5c05602aa8c308d0c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga070d2ce7b6bb7e5c05602aa8c308d0c4">&#9670;&#160;</a></span>NULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL&#160;&#160;&#160;( (void*) 0 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>include sorunlarına önlem olarak NULL tanımlaması. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Fonksiyon Dokümantasyonu</h2>
+<a id="gab638819561958ebec2ce2acc3d6124ed" name="gab638819561958ebec2ce2acc3d6124ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab638819561958ebec2ce2acc3d6124ed">&#9670;&#160;</a></span>uckuyrukBastakiOge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukBastakiOge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğun en başındaki veriyi gösterir (peek).</p>
+<p>Gösterilen veri kuyruktan çıkarılmaz, veriyi kuyruktan çıkarıp almak için <a class="el" href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl()</a> işlevini kullanınız. kuyruk parametresi NULL verilirse bu işlev hep 0 değerini döndürecektir. 0 Değeri de unsigned char türünden kuyruklanabilir bir değerdir. Dönen değerin doğrulanması veya ayrımının yapılması programcının sorumluluğudur. Bunu yapmanın en kolay yolu bu işlevi kullanmadan önce kuyruğu; <a class="el" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos()</a> işlevini kullanarak yoklamaktır.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>kuyruk NULL ise hep 0, yoksa kuyruğun başındaki veri.</dd></dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl()</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaa1b0264ead3d549f8320d9ba13ca8969" name="gaa1b0264ead3d549f8320d9ba13ca8969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1b0264ead3d549f8320d9ba13ca8969">&#9670;&#160;</a></span>uckuyrukBos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char uckuyrukBos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğun boş olup olmadığını yoklar.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Kuyruk NULL veya boşsa <b>1</b> (true), değilse <b>0</b> (false) döndürür. </dd></dl>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_gaa1b0264ead3d549f8320d9ba13ca8969_icgraph.png" border="0" usemap="#agroup__uckuyruk_gaa1b0264ead3d549f8320d9ba13ca8969_icgraph" alt=""/></div>
+<map name="agroup__uckuyruk_gaa1b0264ead3d549f8320d9ba13ca8969_icgraph" id="agroup__uckuyruk_gaa1b0264ead3d549f8320d9ba13ca8969_icgraph">
+<area shape="rect" title=" " alt="" coords="200,5,299,31"/>
+<area shape="rect" href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88" title=" " alt="" coords="5,5,152,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gacf5fee0f357e67e3c06254d1dee082bc" name="gacf5fee0f357e67e3c06254d1dee082bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf5fee0f357e67e3c06254d1dee082bc">&#9670;&#160;</a></span>uckuyrukBosalt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uckuyrukBosalt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğu tamamen boşaltır (flush).</p>
+<p>Bu işlem önce tamponu 0 değeri ile doldurur ve ardından kuyruk yönetim değişkenlerini sıfırlar.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#gab3eca5b5439f8cd9477159384e032f83">uckuyrukNBosalt()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gac17c2c22af4087626688a779773dc363" name="gac17c2c22af4087626688a779773dc363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac17c2c22af4087626688a779773dc363">&#9670;&#160;</a></span>uckuyrukCokluAl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukCokluAl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>hedef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>nicelik</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruktan istenen nicelikte veri alır.</p>
+<p>Kuyruğun başındaki verileri kuyruktaki sırasıyla, hedef belleğe belirtilen, nicelikte alır. Kuyruktan alınan veriler kuyruktan çıkarılır. Kuyruktan alınacak veriyi saklayacak kadar yere sahip bir hedef sağlamak programcının sorumluluğudur. Aksi takdirde veriler kaybolabilir veya gereken kapasiteye sahip bir yer sağlanmamışsa verilerin hedefe sığan bölümü alınırken kalanı kaybolabilir. Hedefe aktarma işlemi başarılıysa aktarılan veri niceliği döndürülür. Diğer yandan; kuyruk veya hedef parametrelerinin biri NULL ise veya nicelik 1'den küçükse veya kuyrukta istenen nicelikte veri yoksa 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">hedef</td><td>Kuyruktan alınan verilerin saklanmak istediği konuma referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nicelik</td><td>Başlangıcı verilen veriden kaç tanesinin kuyruğa alınacağı. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Kuyrukta istenen nicelikte veri yoksa <b>0</b>, hedefe aktarım başarılıysa aktarılan verilerin niceliği. </dd></dl>
+
+</div>
+</div>
+<a id="ga769b27f939cb739427a98d4a89726c12" name="ga769b27f939cb739427a98d4a89726c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga769b27f939cb739427a98d4a89726c12">&#9670;&#160;</a></span>uckuyrukCokluKuyrukla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukCokluKuyrukla </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>kaynak</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>nicelik</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğa belirtilen nicelikte veri ekler.</p>
+<p>Veriler kuyruğun en sonuna eklenir ve kuyruklanan verinin niceliği döndürülür. kuyruk veya kaynak parametreleri NULL verilirse veya nicelik 1'den küçükse veya kuyrukta; kuyruklanmak istenen verileri alacak kadar yer yoksa işlem sürdürülmez ve kuyruklamanın başarısız olduğunu ifade eden bir 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kaynak</td><td>Veriyi içeren dizideki verinin başlangıç adresine referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nicelik</td><td>Başlangıcı verilen veriden kaç tanesinin kuyruğa alınacağı. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>kuyruk veya kaynak NULL ise veya kuyrukta yeteri kadar boş yer yoksa <b>0</b>, kuyruklama başarılıysa <b>nicelik</b>. </dd></dl>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_ga769b27f939cb739427a98d4a89726c12_cgraph.png" border="0" usemap="#agroup__uckuyruk_ga769b27f939cb739427a98d4a89726c12_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_ga769b27f939cb739427a98d4a89726c12_cgraph" id="agroup__uckuyruk_ga769b27f939cb739427a98d4a89726c12_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,165,31"/>
+<area shape="rect" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f" title=" " alt="" coords="213,5,372,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga821075f1e913988ac99be6f27abff0da" name="ga821075f1e913988ac99be6f27abff0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga821075f1e913988ac99be6f27abff0da">&#9670;&#160;</a></span>uckuyrukDoldur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukDoldur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>deger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>nicelik</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğu belirtilen sayıda aynı veri ile doldurur.</p>
+<p>İşlem başarılıysa kuyruğa doldurulan nicelik döndürülür. kuyruk NULL ise veya kuyrukta doldurulacak nicelikte yer yoksa veya nicelik 1'den küçükse hep 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deger</td><td>Kuyruğa doldurulacak unsigned char türünde veri. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nicelik</td><td>Verilen verinin kuyruğa çoğaltılma sayısı. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Kuyruk doluysa veya belirtilen nicelikteki verileri alacak kadar boş yer yoksa verileri kuyruğa almaz ve 0, işlem başarılı olursa kuyruklanan verilerin niceliğini döndürür. </dd></dl>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_ga821075f1e913988ac99be6f27abff0da_cgraph.png" border="0" usemap="#agroup__uckuyruk_ga821075f1e913988ac99be6f27abff0da_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_ga821075f1e913988ac99be6f27abff0da_cgraph" id="agroup__uckuyruk_ga821075f1e913988ac99be6f27abff0da_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,119,31"/>
+<area shape="rect" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f" title=" " alt="" coords="167,5,325,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga1166641a67687372c3aa771eb1e0df77" name="ga1166641a67687372c3aa771eb1e0df77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1166641a67687372c3aa771eb1e0df77">&#9670;&#160;</a></span>uckuyrukDolu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char uckuyrukDolu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğun dolu olup olmadığını yoklar.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Kuyruk NULL veya doluysa <b>1</b> (true), değilse <b>0</b> (false) döndürür. </dd></dl>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_ga1166641a67687372c3aa771eb1e0df77_icgraph.png" border="0" usemap="#agroup__uckuyruk_ga1166641a67687372c3aa771eb1e0df77_icgraph" alt=""/></div>
+<map name="agroup__uckuyruk_ga1166641a67687372c3aa771eb1e0df77_icgraph" id="agroup__uckuyruk_ga1166641a67687372c3aa771eb1e0df77_icgraph">
+<area shape="rect" title=" " alt="" coords="180,5,283,31"/>
+<area shape="rect" href="group__uckuyruk.html#ga0faf8f0e435b987fa89e45648350f979" title=" " alt="" coords="5,5,132,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga1076fc2da0ba408372720fd7dfce197a" name="ga1076fc2da0ba408372720fd7dfce197a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1076fc2da0ba408372720fd7dfce197a">&#9670;&#160;</a></span>uckuyrukIlkle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uckuyrukIlkle </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>kapasite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>tampon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğu ilk kullanıma hazırlar.</p>
+<p>Kuyruk veya tampon parametrelerinin biri NULL ise işlem sürdürülmez.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kapasite</td><td>Kuyruğun 1 - 255 aralığında kapasitesi, sizeof ile unsigned char türüne cast edilerek verilebilir. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tampon</td><td>Uygulamada tanımlanan bir unsigned char türünde dizi. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac6e7e6be7bcd59765ef7f4dcd351b14f" name="gac6e7e6be7bcd59765ef7f4dcd351b14f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6e7e6be7bcd59765ef7f4dcd351b14f">&#9670;&#160;</a></span>uckuyrukKalanKapasite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukKalanKapasite </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğun kalan kapasitesini verir.</p>
+<p>Kuyruğun kapasite niceliğini yani kuyruğun daha kaç öğe alabileceğinin sayısının bilgisini verir.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Kuyruğun kalan kapasitesi, kuyruk NULL ise hep <b>0</b>. </dd></dl>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_gac6e7e6be7bcd59765ef7f4dcd351b14f_icgraph.png" border="0" usemap="#agroup__uckuyruk_gac6e7e6be7bcd59765ef7f4dcd351b14f_icgraph" alt=""/></div>
+<map name="agroup__uckuyruk_gac6e7e6be7bcd59765ef7f4dcd351b14f_icgraph" id="agroup__uckuyruk_gac6e7e6be7bcd59765ef7f4dcd351b14f_icgraph">
+<area shape="rect" title=" " alt="" coords="256,129,415,155"/>
+<area shape="rect" href="group__uckuyruk.html#ga769b27f939cb739427a98d4a89726c12" title=" " alt="" coords="27,5,187,31"/>
+<area shape="rect" href="group__uckuyruk.html#ga821075f1e913988ac99be6f27abff0da" title=" " alt="" coords="50,55,163,80"/>
+<area shape="rect" href="group__uckuyruk.html#gafae769a4f6668c1d543622d4f232b1a8" title=" " alt="" coords="29,104,184,129"/>
+<area shape="rect" href="group__uckuyruk.html#gaaba744f28b318a4aaec2168779466a05" title=" " alt="" coords="13,153,201,179"/>
+<area shape="rect" href="group__uckuyruk.html#ga6c2286d7d088cd33464d507e4d205a48" title=" " alt="" coords="5,203,208,228"/>
+<area shape="rect" href="group__uckuyruk.html#ga1d4440db89a9eca92ffc138aeb15110c" title=" " alt="" coords="22,252,191,277"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gafae769a4f6668c1d543622d4f232b1a8" name="gafae769a4f6668c1d543622d4f232b1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafae769a4f6668c1d543622d4f232b1a8">&#9670;&#160;</a></span>uckuyrukKuyrugaAktar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char uckuyrukKuyrugaAktar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kaynak</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>hedef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kaynak kuyruğun başındaki ögeyi hedef kuyruğa kuyruklar.</p>
+<p>Kuyruktan kuyruğa bir öge aktarımı başarılı olursa 1 değeri döndürülür. Kaynak veya hedef kuyrukların referanslarının herhangi birinin NULL olması durumunda işlem sürdürülmez ve 0 değeri döndürülür. Kaynak kuyrukta hiçbir öge yoksa işlem sürdürülmez ve 0 değeri döndürülür. Hedef kuyrukta 1 öge alacak kadar yer yoksa işlem sürdürülmez ve 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kaynak</td><td>Kaynak kuyruğa referans. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">hedef</td><td>Hedef kuyruğa referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Aktarma başarılıysa <b>1</b>, değilse <b>0</b>.</dd></dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#gaaba744f28b318a4aaec2168779466a05">uckuyrukKuyrugaCokluAktar()</a>, <a class="el" href="group__uckuyruk.html#ga1d4440db89a9eca92ffc138aeb15110c">uckuyrukKuyrugaKopyala()</a>. </dd></dl>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_gafae769a4f6668c1d543622d4f232b1a8_cgraph.png" border="0" usemap="#agroup__uckuyruk_gafae769a4f6668c1d543622d4f232b1a8_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_gafae769a4f6668c1d543622d4f232b1a8_cgraph" id="agroup__uckuyruk_gafae769a4f6668c1d543622d4f232b1a8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f" title=" " alt="" coords="208,5,367,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gaaba744f28b318a4aaec2168779466a05" name="gaaba744f28b318a4aaec2168779466a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaba744f28b318a4aaec2168779466a05">&#9670;&#160;</a></span>uckuyrukKuyrugaCokluAktar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukKuyrugaCokluAktar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kaynak</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>hedef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>nicelik</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kaynak kuyruktan hedef kuyruğa birden çok öge aktarır.</p>
+<p>Kuyruktan kuyruğa aktarım başarılı olursa aktarılan ögelerin sayımı döndürülür. Kaynak veya hedef kuyrukların referanslarının herhangi birinin NULL olması durumunda işlem sürdürülmez ve 0 değeri döndürülür. Kaynak kuyrukta aktarılmak istenen nicelik kadar öge yoksa işlem sürdürülmez ve 0 değeri döndürülür. Hedef kuyrukta aktarılmak istenen nicelik kadar öge yoksa işlem sürdürülmez ve 0 değeri döndürülür. Aktarılmak istenen nicelik değeri 0 verilirse işlem sürdürülmez ve 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kaynak</td><td>Kaynak kuyruğa referans. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">hedef</td><td>Hedef kuyruğa referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nicelik</td><td>Aktarılmak istenen öge sayısı. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Aktarma başarılıysa aktarılan öge sayımı, değilse <b>0</b>.</dd></dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#gafae769a4f6668c1d543622d4f232b1a8">uckuyrukKuyrugaAktar()</a>, <a class="el" href="group__uckuyruk.html#ga6c2286d7d088cd33464d507e4d205a48">uckuyrukKuyrugaCokluKopyala()</a>. </dd></dl>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_gaaba744f28b318a4aaec2168779466a05_cgraph.png" border="0" usemap="#agroup__uckuyruk_gaaba744f28b318a4aaec2168779466a05_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_gaaba744f28b318a4aaec2168779466a05_cgraph" id="agroup__uckuyruk_gaaba744f28b318a4aaec2168779466a05_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,193,31"/>
+<area shape="rect" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f" title=" " alt="" coords="241,5,400,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga6c2286d7d088cd33464d507e4d205a48" name="ga6c2286d7d088cd33464d507e4d205a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c2286d7d088cd33464d507e4d205a48">&#9670;&#160;</a></span>uckuyrukKuyrugaCokluKopyala()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukKuyrugaCokluKopyala </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kaynak</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>hedef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>nicelik</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kaynak kuyruğun başından itibaren nicelik kadar ögeyi hedefe kopyalar.</p>
+<p><a class="el" href="group__uckuyruk.html#gaaba744f28b318a4aaec2168779466a05">uckuyrukKuyrugaCokluAktar()</a> İşlevinden farkı kaynak kuyruktan hedef kuyruğa kopyalanan ögelerin kaynak kuyruktan silinmemesidir. Böylece aynı ögeler hem kaynak kuyrukta hem de hedef kuyrukta bulunur. Kopyalama işlemi başarılı olursa hedef kuyruğun sayımı nicelik kadar (kopyalanan ögeler kadar) artarken, ögeler kaynak kuyruktan çıkarılmadığı için kaynak kuyruğun sayımı olduğu gibi kalır ve baştaki öge değişmez. Kuyruktan kuyruğa aktarım başarılı olursa aktarılan ögelerin sayımı döndürülür. Kaynak veya hedef kuyrukların referanslarının herhangi birinin NULL olması durumunda işlem sürdürülmez ve 0 değeri döndürülür. Kaynak kuyrukta aktarılmak istenen nicelik kadar öge yoksa işlem sürdürülmez ve 0 değeri döndürülür. Hedef kuyrukta aktarılmak istenen nicelik kadar öge yoksa işlem sürdürülmez ve 0 değeri döndürülür. Aktarılmak istenen nicelik değeri 0 verilirse işlem sürdürülmez ve 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kaynak</td><td>Kaynak kuyruğa referans. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">hedef</td><td>Hedef kuyruğa referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nicelik</td><td>Aktarılmak istenen öge sayısı. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Aktarma başarılıysa aktarılan öge sayımı, değilse <b>0</b>.</dd></dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#ga1d4440db89a9eca92ffc138aeb15110c">uckuyrukKuyrugaKopyala()</a>, <a class="el" href="group__uckuyruk.html#gaaba744f28b318a4aaec2168779466a05">uckuyrukKuyrugaCokluAktar()</a>. </dd></dl>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_ga6c2286d7d088cd33464d507e4d205a48_cgraph.png" border="0" usemap="#agroup__uckuyruk_ga6c2286d7d088cd33464d507e4d205a48_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_ga6c2286d7d088cd33464d507e4d205a48_cgraph" id="agroup__uckuyruk_ga6c2286d7d088cd33464d507e4d205a48_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,208,31"/>
+<area shape="rect" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f" title=" " alt="" coords="256,5,415,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga1d4440db89a9eca92ffc138aeb15110c" name="ga1d4440db89a9eca92ffc138aeb15110c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d4440db89a9eca92ffc138aeb15110c">&#9670;&#160;</a></span>uckuyrukKuyrugaKopyala()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char uckuyrukKuyrugaKopyala </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kaynak</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>hedef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kaynak kuyruğun başındaki ögeyi hedef kuyruğa kopyalar.</p>
+<p><a class="el" href="group__uckuyruk.html#gafae769a4f6668c1d543622d4f232b1a8">uckuyrukKuyrugaAktar()</a> İşlevinden farkı kaynak kuyruktan hedef kuyruğa kopyalanan ögenin kaynak kuyruktan silinmemesidir. Böylece aynı öge hem kaynak kuyrukta hem de hedef kuyrukta bulunur. Kopyalama işlemi başarılı olursa hedef kuyruğun sayımı bir artarken, öge kaynak kuyruktan çıkarılmadığı için kaynak kuyruğun sayımı olduğu gibi kalır ve baştaki öge değişmez. Kuyruktan kuyruğa bir öge kopyalama başarılı olursa 1 değeri döndürülür. Kaynak veya hedef kuyrukların referanslarının herhangi birinin NULL olması durumunda işlem sürdürülmez ve 0 değeri döndürülür. Kaynak kuyrukta hiçbir öge yoksa işlem sürdürülmez ve 0 değeri döndürülür. Hedef kuyrukta 1 öge alacak kadar yer yoksa işlem sürdürülmez ve 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kaynak</td><td>Kaynak kuyruğa referans. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">hedef</td><td>Hedef kuyruğa referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Aktarma başarılıysa <b>1</b>, değilse <b>0</b>.</dd></dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#ga6c2286d7d088cd33464d507e4d205a48">uckuyrukKuyrugaCokluKopyala()</a>, <a class="el" href="group__uckuyruk.html#gafae769a4f6668c1d543622d4f232b1a8">uckuyrukKuyrugaAktar()</a>. </dd></dl>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_ga1d4440db89a9eca92ffc138aeb15110c_cgraph.png" border="0" usemap="#agroup__uckuyruk_ga1d4440db89a9eca92ffc138aeb15110c_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_ga1d4440db89a9eca92ffc138aeb15110c_cgraph" id="agroup__uckuyruk_ga1d4440db89a9eca92ffc138aeb15110c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,175,31"/>
+<area shape="rect" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f" title=" " alt="" coords="223,5,381,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga0faf8f0e435b987fa89e45648350f979" name="ga0faf8f0e435b987fa89e45648350f979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0faf8f0e435b987fa89e45648350f979">&#9670;&#160;</a></span>uckuyrukKuyrukla()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char uckuyrukKuyrukla </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char&#160;</td>
+          <td class="paramname"><em>deger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğa veri ekler.</p>
+<p>Veri kuyruğun en sonuna eklenir ve kuyruklamanın başarılı olduğunu belirten 1 degeri döndürülür. kuyruk parametresi NULL verilirse veya kuyruk doluysa işlem sürdürülmez ve kuyruklamanın başarısız olduğunu ifade eden bir 0 değeri döndürülür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deger</td><td>Kuyruğa alınacak unsigned char türünde veri. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Kuyruk NULL veya doluysa <b>0</b>, kuyruklama başarılıysa <b>1</b>. </dd></dl>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_ga0faf8f0e435b987fa89e45648350f979_cgraph.png" border="0" usemap="#agroup__uckuyruk_ga0faf8f0e435b987fa89e45648350f979_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_ga0faf8f0e435b987fa89e45648350f979_cgraph" id="agroup__uckuyruk_ga0faf8f0e435b987fa89e45648350f979_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,132,31"/>
+<area shape="rect" href="group__uckuyruk.html#ga1166641a67687372c3aa771eb1e0df77" title=" " alt="" coords="180,5,283,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga6c1ddd00da8c1e0bb21e587695908a88" name="ga6c1ddd00da8c1e0bb21e587695908a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c1ddd00da8c1e0bb21e587695908a88">&#9670;&#160;</a></span>uckuyrukKuyruktanAl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukKuyruktanAl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruğun en başındaki veriyi alır.</p>
+<p>Kuyruktan alınan veri kuyruktan çıkarılır. Kuyruğun en başındaki değere onu kuyruktan çıkarmadan bakmak için <a class="el" href="group__uckuyruk.html#gab638819561958ebec2ce2acc3d6124ed">uckuyrukBastakiOge()</a> kullanılır. kuyruk parametresi NULL verilirse bu işlev hep 0 değerini döndürecektir. 0 Değeri de unsigned char türünden kuyruklanabilir bir değerdir. Dönen değerin doğrulanması veya ayrımının yapılması programcının sorumluluğudur. Bunu yapmanın en kolay yolu bu işlevi kullanmadan önce kuyruğu; <a class="el" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos()</a> işlevini kullanarak yoklamaktır.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>kuyruk NULL ise hep 0, yoksa kuyruğun başındaki veri.</dd></dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#gab638819561958ebec2ce2acc3d6124ed">uckuyrukBastakiOge()</a>, <a class="el" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos()</a>. </dd></dl>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Bu fonksiyon için çağırılma şeması:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="group__uckuyruk_ga6c1ddd00da8c1e0bb21e587695908a88_cgraph.png" border="0" usemap="#agroup__uckuyruk_ga6c1ddd00da8c1e0bb21e587695908a88_cgraph" alt=""/></div>
+<map name="agroup__uckuyruk_ga6c1ddd00da8c1e0bb21e587695908a88_cgraph" id="agroup__uckuyruk_ga6c1ddd00da8c1e0bb21e587695908a88_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,152,31"/>
+<area shape="rect" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969" title=" " alt="" coords="200,5,299,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gab3eca5b5439f8cd9477159384e032f83" name="gab3eca5b5439f8cd9477159384e032f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3eca5b5439f8cd9477159384e032f83">&#9670;&#160;</a></span>uckuyrukNBosalt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uckuyrukNBosalt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyruktan n kadar veriyi boşaltır.</p>
+<p>Boialtılmak istenen miktar n parametresi ile verilir. Boşaltma işlemi başarılı olursa; en baştaki ögeden itibaren n kadar öge kuyruktan silinir, silinen ögelerin konumları 0 değeri ile doldurulur. Kuyruk parametresi NULL ise veya kuyrukta silinmek istenenden daha az öge varsa veya n değeri 0 verilirse işlem sürdürülmez.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">kuyruk</td><td>İşlem yapılacak kuyruğa referans. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>Boşaltma miktarı.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Ayrıca Bakınız</dt><dd><a class="el" href="group__uckuyruk.html#gacf5fee0f357e67e3c06254d1dee082bc">uckuyrukBosalt()</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga7436780d612c55093bbd01bfd1329cb3" name="ga7436780d612c55093bbd01bfd1329cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7436780d612c55093bbd01bfd1329cb3">&#9670;&#160;</a></span>uckuyrukOgeSayimi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char uckuyrukOgeSayimi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>&#160;</td>
+          <td class="paramname"><em>kuyruk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bir kuyrukta bekleyen öğe niceliğini döndürür.</p>
+<dl class="params"><dt>Parametreler</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kuyruk</td><td>Uygulamada tanımlanan bir uckuyruk_t yapısına referans. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Döndürdüğü değer</dt><dd>Kuyrukta bekleyen öğe niceliği, kuyruk NULL ise her zaman <b>0</b>. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Oluşturan <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

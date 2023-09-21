@@ -1,0 +1,70 @@
+/**
+\page lisans Lisans
+\author İsmail Sahillioğlu (Kozmotronik)
+\copyright MIT Lisansı.
+
+### Türkçe Sürümü
+Görevci projesi, metni aşağıda verilen MIT açık kaynak lisansı altında
+yayınlanmaktadır.
+
+Bu lisans gorevci/kaynak dizininde bulunan kaynak kodu dosyalarının hepsini
+kapsamaktadır. Ayrıca demo projeleri bu projenin parçası olmayan üçüncü parti
+yazılımlar içerebilir ve bu yazılımlar bu projeden ayrı olarak lisanslanmış
+olabilir.
+
+Lisans metni:
+________________________________________________________________________________
+Hiçbir ücret talep edilmeden burada işbu yazılımın bir kopyasını ve
+belgelendirme dosyalarını (“Yazılım”) elde eden herkese verilen izin; kullanma,
+kopyalama, değiştirme, birleştirme, yayımlama, dağıtma, alt lisanslama, ve/veya
+yazılımın kopyalarını satma eylemleri de dahil olmak üzere ve bununla kısıtlama
+olmaksızın, yazılımın sınırlama olmadan ticaretini yapmak için verilmiş olup,
+bunları yapmaları için yazılımın sağlandığı kişilere aşağıdakileri yapmak
+koşuluyla sunulur:
+
+Yukarıdaki telif hakkı bildirimi ve işbu izin bildirimi yazılımın tüm
+kopyalarına veya önemli parçalarına eklenmelidir.
+
+YAZILIM “HİÇBİR DEĞİŞİKLİK YAPILMADAN” ESASINA BAĞLI OLARAK, TİCARETE
+ELVERİŞLİLİK, ÖZEL BİR AMACA UYGUNLUK VE İHLAL OLMAMASI DA DAHİL VE BUNUNLA
+KISITLI OLMAKSIZIN AÇIKÇA VEYA ÜSTÜ KAPALI OLARAK HİÇBİR TEMİNAT OLMAKSIZIN
+SUNULMUŞTUR. HİÇBİR KOŞULDA YAZARLAR VEYA TELİF HAKKI SAHİPLERİ HERHANGİ BİR
+İDDİAYA, HASARA VEYA DİĞER YÜKÜMLÜLÜKLERE KARŞI, YAZILIMLA VEYA KULLANIMLA
+VEYA YAZILIMIN BAŞKA BAĞLANTILARIYLA İLGİLİ, BUNLARDAN KAYNAKLANAN VE
+BUNLARIN SONUCU BİR SÖZLEŞME DAVASI, HAKSIZ FİİL VEYA DİĞER EYLEMLERDEN
+SORUMLU DEĞİLDİR.
+*/
+
+/**
+\defgroup senkronizasyon Senkronizasyon
+\ingroup gorevci
+
+Birbirinden bağımsız çalışan görevlerin paylaşılan kaynaklara erişimini
+senkronize etmeye yarayan mekanizmalar.
+*/
+
+/**
+\defgroup veri Veri Yönetimi
+\ingroup gorevci
+
+Veri yapıları kullanarak veri organizasyonunu kolaylaştıracak mekanizmalar.
+*/
+
+/**
+\defgroup port Port - Hedef Platform Yönetimi
+\ingroup gorevci
+
+Görevci temel olarak C dili ile yazıldığı için hemen hemen her platformla
+uyumludur ancak yine de platforma özel olabilecek bazı işlevselliklere
+bağımlıdır.
+Örneğin Görevci'ye ilgili platform tarafından bir sistem tiki zamanlayıcısı
+sunulmalıdır. Ancak herbir hedef platformun zamanlayıcı ilkleme ve yönetim
+işlevleri kendine özel olduğundan Görevci bu aşamada ilgili platforma
+arayüzlenmelidir veya diğer bir deyişle bağımlı bölümler platformun sunduğu
+parçalar ile birleştirilmelidir. Ancak bu, platform çeşitliliğinden dolayı
+yönetmesi zor bir işlemdir.
+Neyseki C dili modüler bir yapıya sahip olduğundan bu farklı hedef platformlara
+entegrasyon daha kolay yollarla sağlanabilmektedir. Bu yol, herbir hedef
+platforma özel temel tanımlamaları yapıp, gereken bazı işlevselliklerin
+gerçeklemesini Görevci kütüphanesini kullanacak olan geliştiriciye bırakmaktır.
+*/

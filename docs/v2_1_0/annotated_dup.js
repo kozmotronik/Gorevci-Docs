@@ -1,0 +1,7 @@
+var annotated_dup =
+[
+    [ "Bayrak", "struct_bayrak.html", "struct_bayrak" ],
+    [ "GorevKontrolBlogu", "struct_gorev_kontrol_blogu.html", "struct_gorev_kontrol_blogu" ],
+    [ "SureKontrolBlogu", "struct_sure_kontrol_blogu.html", "struct_sure_kontrol_blogu" ],
+    [ "UCKuyruk", "struct_u_c_kuyruk.html", "struct_u_c_kuyruk" ]
+];

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Görevci by Kozmotronik: /home/Kasa/projeler/gomulu/coklu-gorevleme/gorevci/gorevci/include/uckuyruk.h Kaynak Dosyası</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="gorevci_logo_96.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Görevci by Kozmotronik<span id="projectnumber">&#160;v2.1.0</span>
+   </div>
+   <div id="projectbrief">Küçük gömülü sistemler için çoklu görev (multi-tasking) yönetimi uygulaması</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Oluşturan Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Ara');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('uckuyruk_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Yüklüyor...</div>
+<div class="SRStatus" id="Searching">Arıyor...</div>
+<div class="SRStatus" id="NoMatches">Eşleşme Yok</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">uckuyruk.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="uckuyruk_8h.html">Bu dosyanın dokümantasyonuna git.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (C) 2023 Kozmotronik (İsmail Sahillioğlu)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * Hiçbir ücret talep edilmeden burada işbu yazılımın bir kopyasını ve </span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * belgelendirme dosyalarını (“Yazılım”) elde eden herkese verilen izin; </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * kullanma, kopyalama, değiştirme, birleştirme, yayımlama, dağıtma, </span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * alt lisanslama, ve/veya yazılımın kopyalarını satma eylemleri de dahil </span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * olmak üzere ve bununla kısıtlama olmaksızın, yazılımın sınırlama olmadan </span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * ticaretini yapmak için verilmiş olup, bunları yapmaları için yazılımın </span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * sağlandığı kişilere aşağıdakileri yapmak koşuluyla sunulur:</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * Yukarıdaki telif hakkı bildirimi ve işbu izin bildirimi yazılımın tüm </span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * kopyalarına veya önemli parçalarına eklenmelidir.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * YAZILIM “HİÇBİR DEĞİŞİKLİK YAPILMADAN” ESASINA BAĞLI OLARAK, TİCARETE </span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * ELVERİŞLİLİK, ÖZEL BİR AMACA UYGUNLUK VE İHLAL OLMAMASI DA DAHİL VE BUNUNLA </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * KISITLI OLMAKSIZIN AÇIKÇA VEYA ÜSTÜ KAPALI OLARAK HİÇBİR TEMİNAT OLMAKSIZIN </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * SUNULMUŞTUR. </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * HİÇBİR KOŞULDA YAZARLAR VEYA TELİF HAKKI SAHİPLERİ HERHANGİ BİR İDDİAYA, </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * HASARA VEYA DİĞER YÜKÜMLÜLÜKLERE KARŞI, YAZILIMLA VEYA KULLANIMLA VEYA </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * YAZILIMIN BAŞKA BAĞLANTILARIYLA İLGİLİ, BUNLARDAN KAYNAKLANAN VE BUNLARIN </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * SONUCU BİR SÖZLEŞME DAVASI, HAKSIZ FİİL VEYA DİĞER EYLEMLERDEN SORUMLU </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * DEĞİLDİR.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#ifndef UC_KUYRUK_H</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#define UC_KUYRUK_H</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#ifndef NULL</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="group__uckuyruk.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">  132</a></span><span class="preprocessor">#define NULL ( (void*) 0 )</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="struct_u_c_kuyruk.html">  143</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_u_c_kuyruk.html">UCKuyruk</a> {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="struct_u_c_kuyruk.html#aaf27af9b2e6ce259afae06611334eff7">  145</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="struct_u_c_kuyruk.html#aaf27af9b2e6ce259afae06611334eff7">kapasite</a>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="struct_u_c_kuyruk.html#aa1875bed3a973d259971893f67f19e7a">  148</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="struct_u_c_kuyruk.html#aa1875bed3a973d259971893f67f19e7a">sayim</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="struct_u_c_kuyruk.html#addf6e7df3482eb2ad517bd16a55cbed0">  150</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="struct_u_c_kuyruk.html#addf6e7df3482eb2ad517bd16a55cbed0">bas</a>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="struct_u_c_kuyruk.html#ab17e615324f4b94c102303ef18c82ee3">  153</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="struct_u_c_kuyruk.html#ab17e615324f4b94c102303ef18c82ee3">tampon</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>};</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="group__uckuyruk.html#gae42454e68b23ac7aa059e395216a0db0">  157</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_u_c_kuyruk.html">UCKuyruk</a> <a class="code hl_struct" href="struct_u_c_kuyruk.html">uckuyruk_t</a>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">  160</a></span><span class="keyword">typedef</span> <a class="code hl_struct" href="struct_u_c_kuyruk.html">uckuyruk_t</a> *<a class="code hl_typedef" href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__uckuyruk.html#ga1076fc2da0ba408372720fd7dfce197a">uckuyrukIlkle</a>(</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="struct_u_c_kuyruk.html#aaf27af9b2e6ce259afae06611334eff7">kapasite</a>, <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct_u_c_kuyruk.html#ab17e615324f4b94c102303ef18c82ee3">tampon</a>);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga0faf8f0e435b987fa89e45648350f979">uckuyrukKuyrukla</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> deger);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga769b27f939cb739427a98d4a89726c12">uckuyrukCokluKuyrukla</a>(</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* kaynak, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> nicelik);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#gab638819561958ebec2ce2acc3d6124ed">uckuyrukBastakiOge</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#gac17c2c22af4087626688a779773dc363">uckuyrukCokluAl</a>(</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* hedef, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> nicelik);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#gafae769a4f6668c1d543622d4f232b1a8">uckuyrukKuyrugaAktar</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kaynak, <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> hedef);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#gaaba744f28b318a4aaec2168779466a05">uckuyrukKuyrugaCokluAktar</a>(</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kaynak, <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> hedef, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> nicelik);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga1d4440db89a9eca92ffc138aeb15110c">uckuyrukKuyrugaKopyala</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kaynak, <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> hedef);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga6c2286d7d088cd33464d507e4d205a48">uckuyrukKuyrugaCokluKopyala</a>(</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kaynak, <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> hedef, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> nicelik);</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__uckuyruk.html#gacf5fee0f357e67e3c06254d1dee082bc">uckuyrukBosalt</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk);</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__uckuyruk.html#gab3eca5b5439f8cd9477159384e032f83">uckuyrukNBosalt</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> n);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga821075f1e913988ac99be6f27abff0da">uckuyrukDoldur</a>(</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> deger, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> nicelik);</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga7436780d612c55093bbd01bfd1329cb3">uckuyrukOgeSayimi</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk);</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#ga1166641a67687372c3aa771eb1e0df77">uckuyrukDolu</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk);</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f">uckuyrukKalanKapasite</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk);</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span> </div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span><span class="keywordtype">char</span> <a class="code hl_function" href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos</a>(<a class="code hl_struct" href="struct_u_c_kuyruk.html">puck_t</a> kuyruk);</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="preprocessor">#endif </span><span class="comment">/* UC_KUYRUK_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga0faf8f0e435b987fa89e45648350f979"><div class="ttname"><a href="group__uckuyruk.html#ga0faf8f0e435b987fa89e45648350f979">uckuyrukKuyrukla</a></div><div class="ttdeci">char uckuyrukKuyrukla(puck_t kuyruk, const unsigned char deger)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:45</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga1076fc2da0ba408372720fd7dfce197a"><div class="ttname"><a href="group__uckuyruk.html#ga1076fc2da0ba408372720fd7dfce197a">uckuyrukIlkle</a></div><div class="ttdeci">void uckuyrukIlkle(const unsigned char kapasite, puck_t kuyruk, unsigned char *tampon)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:36</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga1166641a67687372c3aa771eb1e0df77"><div class="ttname"><a href="group__uckuyruk.html#ga1166641a67687372c3aa771eb1e0df77">uckuyrukDolu</a></div><div class="ttdeci">char uckuyrukDolu(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:270</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga1d4440db89a9eca92ffc138aeb15110c"><div class="ttname"><a href="group__uckuyruk.html#ga1d4440db89a9eca92ffc138aeb15110c">uckuyrukKuyrugaKopyala</a></div><div class="ttdeci">char uckuyrukKuyrugaKopyala(puck_t kaynak, puck_t hedef)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:170</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga49245ed4656559bd5613a477f498ac12"><div class="ttname"><a href="group__uckuyruk.html#ga49245ed4656559bd5613a477f498ac12">puck_t</a></div><div class="ttdeci">uckuyruk_t * puck_t</div><div class="ttdoc">uckuyruk_t yapısı için başvuru türü (okunaklılığı iyileştirmek için)</div><div class="ttdef"><b>Definition:</b> uckuyruk.h:160</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga6c1ddd00da8c1e0bb21e587695908a88"><div class="ttname"><a href="group__uckuyruk.html#ga6c1ddd00da8c1e0bb21e587695908a88">uckuyrukKuyruktanAl</a></div><div class="ttdeci">unsigned char uckuyrukKuyruktanAl(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:84</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga6c2286d7d088cd33464d507e4d205a48"><div class="ttname"><a href="group__uckuyruk.html#ga6c2286d7d088cd33464d507e4d205a48">uckuyrukKuyrugaCokluKopyala</a></div><div class="ttdeci">unsigned char uckuyrukKuyrugaCokluKopyala(puck_t kaynak, puck_t hedef, const unsigned char nicelik)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:188</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga7436780d612c55093bbd01bfd1329cb3"><div class="ttname"><a href="group__uckuyruk.html#ga7436780d612c55093bbd01bfd1329cb3">uckuyrukOgeSayimi</a></div><div class="ttdeci">unsigned char uckuyrukOgeSayimi(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:266</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga769b27f939cb739427a98d4a89726c12"><div class="ttname"><a href="group__uckuyruk.html#ga769b27f939cb739427a98d4a89726c12">uckuyrukCokluKuyrukla</a></div><div class="ttdeci">unsigned char uckuyrukCokluKuyrukla(puck_t kuyruk, const unsigned char *kaynak, const unsigned char nicelik)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:59</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_ga821075f1e913988ac99be6f27abff0da"><div class="ttname"><a href="group__uckuyruk.html#ga821075f1e913988ac99be6f27abff0da">uckuyrukDoldur</a></div><div class="ttdeci">unsigned char uckuyrukDoldur(puck_t kuyruk, const unsigned char deger, const unsigned char nicelik)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:246</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gaa1b0264ead3d549f8320d9ba13ca8969"><div class="ttname"><a href="group__uckuyruk.html#gaa1b0264ead3d549f8320d9ba13ca8969">uckuyrukBos</a></div><div class="ttdeci">char uckuyrukBos(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:274</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gaaba744f28b318a4aaec2168779466a05"><div class="ttname"><a href="group__uckuyruk.html#gaaba744f28b318a4aaec2168779466a05">uckuyrukKuyrugaCokluAktar</a></div><div class="ttdeci">unsigned char uckuyrukKuyrugaCokluAktar(puck_t kaynak, puck_t hedef, const unsigned char nicelik)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:139</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gab3eca5b5439f8cd9477159384e032f83"><div class="ttname"><a href="group__uckuyruk.html#gab3eca5b5439f8cd9477159384e032f83">uckuyrukNBosalt</a></div><div class="ttdeci">void uckuyrukNBosalt(puck_t kuyruk, unsigned char n)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:225</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gab638819561958ebec2ce2acc3d6124ed"><div class="ttname"><a href="group__uckuyruk.html#gab638819561958ebec2ce2acc3d6124ed">uckuyrukBastakiOge</a></div><div class="ttdeci">unsigned char uckuyrukBastakiOge(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:80</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gac17c2c22af4087626688a779773dc363"><div class="ttname"><a href="group__uckuyruk.html#gac17c2c22af4087626688a779773dc363">uckuyrukCokluAl</a></div><div class="ttdeci">unsigned char uckuyrukCokluAl(puck_t kuyruk, unsigned char *hedef, const unsigned char nicelik)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:97</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gac6e7e6be7bcd59765ef7f4dcd351b14f"><div class="ttname"><a href="group__uckuyruk.html#gac6e7e6be7bcd59765ef7f4dcd351b14f">uckuyrukKalanKapasite</a></div><div class="ttdeci">unsigned char uckuyrukKalanKapasite(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:278</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gacf5fee0f357e67e3c06254d1dee082bc"><div class="ttname"><a href="group__uckuyruk.html#gacf5fee0f357e67e3c06254d1dee082bc">uckuyrukBosalt</a></div><div class="ttdeci">void uckuyrukBosalt(puck_t kuyruk)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:216</div></div>
+<div class="ttc" id="agroup__uckuyruk_html_gafae769a4f6668c1d543622d4f232b1a8"><div class="ttname"><a href="group__uckuyruk.html#gafae769a4f6668c1d543622d4f232b1a8">uckuyrukKuyrugaAktar</a></div><div class="ttdeci">char uckuyrukKuyrugaAktar(puck_t kaynak, puck_t hedef)</div><div class="ttdef"><b>Definition:</b> uckuyruk.c:120</div></div>
+<div class="ttc" id="astruct_u_c_kuyruk_html"><div class="ttname"><a href="struct_u_c_kuyruk.html">UCKuyruk</a></div><div class="ttdef"><b>Definition:</b> uckuyruk.h:143</div></div>
+<div class="ttc" id="astruct_u_c_kuyruk_html_aa1875bed3a973d259971893f67f19e7a"><div class="ttname"><a href="struct_u_c_kuyruk.html#aa1875bed3a973d259971893f67f19e7a">UCKuyruk::sayim</a></div><div class="ttdeci">unsigned char sayim</div><div class="ttdef"><b>Definition:</b> uckuyruk.h:148</div></div>
+<div class="ttc" id="astruct_u_c_kuyruk_html_aaf27af9b2e6ce259afae06611334eff7"><div class="ttname"><a href="struct_u_c_kuyruk.html#aaf27af9b2e6ce259afae06611334eff7">UCKuyruk::kapasite</a></div><div class="ttdeci">unsigned char kapasite</div><div class="ttdoc">1 - 255 arası kapasite. Bu, kuyruğun sonunu bilmek için gereklidir.</div><div class="ttdef"><b>Definition:</b> uckuyruk.h:145</div></div>
+<div class="ttc" id="astruct_u_c_kuyruk_html_ab17e615324f4b94c102303ef18c82ee3"><div class="ttname"><a href="struct_u_c_kuyruk.html#ab17e615324f4b94c102303ef18c82ee3">UCKuyruk::tampon</a></div><div class="ttdeci">unsigned char * tampon</div><div class="ttdef"><b>Definition:</b> uckuyruk.h:153</div></div>
+<div class="ttc" id="astruct_u_c_kuyruk_html_addf6e7df3482eb2ad517bd16a55cbed0"><div class="ttname"><a href="struct_u_c_kuyruk.html#addf6e7df3482eb2ad517bd16a55cbed0">UCKuyruk::bas</a></div><div class="ttdeci">unsigned char bas</div><div class="ttdoc">Kuyrukta sıradaki okunmayı / alınmayı bekleyen verinin konumunu tutar.</div><div class="ttdef"><b>Definition:</b> uckuyruk.h:150</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_027826c5dc682ad4244e84535c815165.html">gorevci</a></li><li class="navelem"><a class="el" href="dir_2ea1111808157fd6ff9dfc2dbb8ebc71.html">include</a></li><li class="navelem"><a class="el" href="uckuyruk_8h.html">uckuyruk.h</a></li>
+    <li class="footer">Oluşturan <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
