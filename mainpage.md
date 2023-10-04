@@ -1,8 +1,10 @@
-/**
 \mainpage Görevci Belgelendirmesi
 
 \author İsmail Sahillioğlu (Kozmotronik)
 \copyright \ref lisans "MIT Lisansı"
+
+\image html gorevci-docs.png
+<!-- \image latex gorevci-docs.png "Görevci Docs Resmi" width=14cm -->
 
 
 ### Görevciyi Edinme
@@ -29,7 +31,7 @@ görev yönetimini kendisi yapar. Her iki kipin kullanımı port demolarında
 ### Görevler Oluşturma
 Bir görevin normal bir C işlevinden pek bir farkı yoktur, yalnızca biraz daha
 yapılandırılmıştır ve sürekli çalışması gereken görevler içlerinde bir sonsuz
-döngü içerir. Bir görevin temel yapısı şu şekilde olmalıdır:
+döngü içerir. Bir görevin temel yapısı şu şekilde olmalıdır:  
 
 \code
 char gorev(gorevTutucu_t tutucu) {
@@ -90,4 +92,3 @@ göreve vermek isteyebilir. Böyle bir durumda:
 - `grvVAZGEC()` - *işletim sistemlerindeki `yield()` işlevlerine benzer*
 - `grvKOSULA_DEK_VAZGEC()`
 
-*/
