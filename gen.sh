@@ -28,7 +28,7 @@ VERSION=$sonTag VERSION_PATH=$sonTagAltTire doxygen Doxyfile
 cd "$surumCiktiYolu/latex"; make
 
 # 4. Üretilen pdf dosyayı sürüme göre adlandır
-dadi="Görevci-Docs-$sonTag"
+dadi="Görevci-Docs-$sonTag.pdf"
 mv refman.pdf $dadi
 
 # 5. dosyayı pdf dizinine taşı
