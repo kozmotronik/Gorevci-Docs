@@ -1,6 +1,6 @@
 # Görevci Belgelendirme Sayfasına Hoşgeldiniz
 
-![Görevci-Docs resmi](https://github.com/kozmotronik/Gorevci-Docs/blob/main/assets/gorevci-docs.png)
+![Görevci-Docs resmi](assets/gorevci-docs.png)
 
 Görevci belgelendirmesi, v2.1.0 sürümünden itibaren herbir sürüm için, 
 online html ve pdf olmak üzere iki farklı biçimde sunulmaktadır.  
