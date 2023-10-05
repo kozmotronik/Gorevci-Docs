@@ -148,7 +148,7 @@ Görevler Oluşturma</h3>
 Görevleri Yönetme</h3>
 <p>Bir görevin bir olay beklemesi ya da gecikmesi gerekiyorsa CPU' yu boşuna meşgul etmemek, gerektiğinde beklemesi gereken görevi bloklayıp çalışmaya hazır başka bir görevin çalışmasını sağlamak Görevcinin temel amaçlarındandır. Ancak bu mekanizmanın düzgün bir şekilde işlemesi için görev bloğu içerisinde, klasik super-loop veya state-machine programlama mantığında kullanılan <code>return</code> ve <code>break</code> gibi dönüş ve döngü kırma komutları kesinlikle kullanılmamalıdır. Böyle yapmak görevin düzgün ve beklendiği gibi çalışmamasına neden olur. Bunun yerine aşağıdaki örnek durumlara uygun düşen API' ler kullanılmalıdır.</p>
 <h4><a class="anchor" id="autotoc_md4"></a>
-Bir görevdi geciktirme</h4>
+Bir görevi geciktirme</h4>
 <ul>
 <li><code><a class="el" href="group__gorev.html#ga4de2aa64917cc36fe2d09ccc5cd127dd">grvGECIK_MS()</a></code> - <em>işletim sistemlerinde <code>sleep()</code> işlevlerine benzer</em></li>
 <li><code><a class="el" href="group__gorev.html#gad9d291b9b9e3ad08dd131e20e6a9b844">grvKOSULLU_GECIK_MS()</a></code> - <em>işletim sistemlerinde <code>sleep()</code> işlevlerine benzer</em></li>

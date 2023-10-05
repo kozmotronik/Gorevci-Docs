@@ -75,7 +75,7 @@ ve `break` gibi dönüş ve döngü kırma komutları kesinlikle kullanılmamal�
 Böyle yapmak görevin düzgün ve beklendiği gibi çalışmamasına neden olur.
 Bunun yerine aşağıdaki örnek durumlara uygun düşen API' ler kullanılmalıdır.
 
-#### Bir görevdi geciktirme
+#### Bir görevi geciktirme
 - `grvGECIK_MS()` - *işletim sistemlerinde `sleep()` işlevlerine benzer*
 - `grvKOSULLU_GECIK_MS()` - *işletim sistemlerinde `sleep()` işlevlerine benzer*
 
