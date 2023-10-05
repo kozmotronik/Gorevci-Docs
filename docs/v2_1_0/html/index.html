@@ -114,33 +114,36 @@ Kip Seçimi</h3>
 Görevler Oluşturma</h3>
 <p>Bir görevin normal bir C işlevinden pek bir farkı yoktur, yalnızca biraz daha yapılandırılmıştır ve sürekli çalışması gereken görevler içlerinde bir sonsuz döngü içerir. Bir görevin temel yapısı şu şekilde olmalıdır: <br  />
 </p>
-<div class="fragment"><div class="line">char gorev(gorevTutucu_t tutucu) {</div>
-<div class="line">    // Görev kapsamında (scope) kullanılacak değişkenler burada tanımlanabilir.</div>
-<div class="line">    // Değerini koruması gereken değişkenler &quot;static&quot; niteleyicisiyle</div>
-<div class="line">    // tanımlanmalıdır.</div>
-<div class="line">    static char karakter;</div>
+<div class="fragment"><div class="line"><span class="keywordtype">char</span> gorev(<a class="code hl_typedef" href="group__gorev.html#gabaf8d82ca67804daf3abb5fd69724865">gorevTutucu_t</a> tutucu) {</div>
+<div class="line">    <span class="comment">// Görev kapsamında (scope) kullanılacak değişkenler burada tanımlanabilir.</span></div>
+<div class="line">    <span class="comment">// Değerini koruması gereken değişkenler &quot;static&quot; niteleyicisiyle</span></div>
+<div class="line">    <span class="comment">// tanımlanmalıdır.</span></div>
+<div class="line">    <span class="keyword">static</span> <span class="keywordtype">char</span> karakter;</div>
 <div class="line"> </div>
-<div class="line">    // Bir görev ana görev döngüsünden hemen önce her zaman görev yapısına</div>
-<div class="line">    // başvuru olarak parametre alan grvBASLA() ile başlamalıdır.</div>
-<div class="line">    grvBASLA(tutucu);</div>
+<div class="line">    <span class="comment">// Bir görev ana görev döngüsünden hemen önce her zaman görev yapısına</span></div>
+<div class="line">    <span class="comment">// başvuru olarak parametre alan grvBASLA() ile başlamalıdır.</span></div>
+<div class="line">    <a class="code hl_define" href="group__gorev.html#ga301d663c80bfa01f9af9b8bd741df7ce">grvBASLA</a>(tutucu);</div>
 <div class="line"> </div>
-<div class="line">    // Buraya bir kereye mahsus çalışacak kodlar. Örneğin bir giriş - çıkış</div>
-<div class="line">    // portunu ilkleme veya bir analog ucunu ilkleme kodları gibi. Buradaki</div>
-<div class="line">    // kodlar görevin yaşam süresi boyunca yalnızca bir kez çalışacağı için</div>
-<div class="line">    // ilklendirme işlemlerini yapmak için idealdir.</div>
+<div class="line">    <span class="comment">// Buraya bir kereye mahsus çalışacak kodlar. Örneğin bir giriş - çıkış</span></div>
+<div class="line">    <span class="comment">// portunu ilkleme veya bir analog ucunu ilkleme kodları gibi. Buradaki</span></div>
+<div class="line">    <span class="comment">// kodlar görevin yaşam süresi boyunca yalnızca bir kez çalışacağı için</span></div>
+<div class="line">    <span class="comment">// ilklendirme işlemlerini yapmak için idealdir.</span></div>
 <div class="line"> </div>
-<div class="line">    // Bu döngü bir görev bloğunun ana döngüsüdür. for(;;) biçiminde de</div>
-<div class="line">    // yazılabilir. Burada sonsuz döngüde kalmalı, kesinlikle break veya return</div>
-<div class="line">    // ile döngüden çıkılmamalıdır.</div>
-<div class="line">    while(1) {</div>
-<div class="line">        // Buraya görev kodları ve bloklayıcı API çağrıları</div>
+<div class="line">    <span class="comment">// Bu döngü bir görev bloğunun ana döngüsüdür. for(;;) biçiminde de</span></div>
+<div class="line">    <span class="comment">// yazılabilir. Burada sonsuz döngüde kalmalı, kesinlikle break veya return</span></div>
+<div class="line">    <span class="comment">// ile döngüden çıkılmamalıdır.</span></div>
+<div class="line">    <span class="keywordflow">while</span>(1) {</div>
+<div class="line">        <span class="comment">// Buraya görev kodları ve bloklayıcı API çağrıları</span></div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    // Tüm görev işlevleri görev yapısına başvuru olarak parametre alan</div>
-<div class="line">    // grvBITIR() ile sonlanmalıdır. Akış sonsuz döngüden buraya gelmesi</div>
-<div class="line">    // görevin bir daha çalışmamasına neden olabilir.</div>
-<div class="line">    grvBITIR(tutucu);</div>
+<div class="line">    <span class="comment">// Tüm görev işlevleri görev yapısına başvuru olarak parametre alan</span></div>
+<div class="line">    <span class="comment">// grvBITIR() ile sonlanmalıdır. Akış sonsuz döngüden buraya gelmesi</span></div>
+<div class="line">    <span class="comment">// görevin bir daha çalışmamasına neden olabilir.</span></div>
+<div class="line">    <a class="code hl_define" href="group__gorev.html#ga5e1101c8d5a7cbafeb1a665231457e0b">grvBITIR</a>(tutucu);</div>
 <div class="line">}</div>
+<div class="ttc" id="agroup__gorev_html_ga301d663c80bfa01f9af9b8bd741df7ce"><div class="ttname"><a href="group__gorev.html#ga301d663c80bfa01f9af9b8bd741df7ce">grvBASLA</a></div><div class="ttdeci">#define grvBASLA(g)</div><div class="ttdef"><b>Definition:</b> gorev.h:187</div></div>
+<div class="ttc" id="agroup__gorev_html_ga5e1101c8d5a7cbafeb1a665231457e0b"><div class="ttname"><a href="group__gorev.html#ga5e1101c8d5a7cbafeb1a665231457e0b">grvBITIR</a></div><div class="ttdeci">#define grvBITIR(g)</div><div class="ttdef"><b>Definition:</b> gorev.h:206</div></div>
+<div class="ttc" id="agroup__gorev_html_gabaf8d82ca67804daf3abb5fd69724865"><div class="ttname"><a href="group__gorev.html#gabaf8d82ca67804daf3abb5fd69724865">gorevTutucu_t</a></div><div class="ttdeci">void * gorevTutucu_t</div><div class="ttdoc">Görevin işlevinin kendisine referansı (handle for function).</div><div class="ttdef"><b>Definition:</b> gorev.h:100</div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md3"></a>
 Görevleri Yönetme</h3>
 <p>Bir görevin bir olay beklemesi ya da gecikmesi gerekiyorsa CPU' yu boşuna meşgul etmemek, gerektiğinde beklemesi gereken görevi bloklayıp çalışmaya hazır başka bir görevin çalışmasını sağlamak Görevcinin temel amaçlarındandır. Ancak bu mekanizmanın düzgün bir şekilde işlemesi için görev bloğu içerisinde, klasik super-loop veya state-machine programlama mantığında kullanılan <code>return</code> ve <code>break</code> gibi dönüş ve döngü kırma komutları kesinlikle kullanılmamalıdır. Böyle yapmak görevin düzgün ve beklendiği gibi çalışmamasına neden olur. Bunun yerine aşağıdaki örnek durumlara uygun düşen API' ler kullanılmalıdır.</p>

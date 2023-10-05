@@ -34,7 +34,7 @@ Bir görevin normal bir C işlevinden pek bir farkı yoktur, yalnızca biraz dah
 yapılandırılmıştır ve sürekli çalışması gereken görevler içlerinde bir sonsuz
 döngü içerir. Bir görevin temel yapısı şu şekilde olmalıdır:  
 
-\code
+```c
 char gorev(gorevTutucu_t tutucu) {
     // Görev kapsamında (scope) kullanılacak değişkenler burada tanımlanabilir.
     // Değerini koruması gereken değişkenler "static" niteleyicisiyle
@@ -62,7 +62,7 @@ char gorev(gorevTutucu_t tutucu) {
     // görevin bir daha çalışmamasına neden olabilir.
     grvBITIR(tutucu);
 }
-\endcode
+```
 
 
 ### Görevleri Yönetme
