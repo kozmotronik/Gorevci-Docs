@@ -3,9 +3,9 @@
 \author İsmail Sahillioğlu (Kozmotronik)
 \copyright \ref lisans "MIT Lisansı"
 
-\image html assets/gorevci-docs.png
+\image html gorevci-docs.png
 
-<!-- \image latex assets/gorevci-docs.png "Görevci Docs Resmi" -->
+<!-- \image latex gorevci-docs.png "Görevci Docs Resmi" -->
 
 
 ### Görevciyi Edinme
