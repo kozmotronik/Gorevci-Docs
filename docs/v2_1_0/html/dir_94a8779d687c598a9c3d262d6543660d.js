@@ -1,4 +1,0 @@
-var dir_94a8779d687c598a9c3d262d6543660d =
-[
-    [ "pic18", "dir_b7ae96055b1d689c784545fad875168d.html", "dir_b7ae96055b1d689c784545fad875168d" ]
-];
